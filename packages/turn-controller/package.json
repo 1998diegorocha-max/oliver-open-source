@@ -1,0 +1,9 @@
+{
+  "name": "@dragon-oliver/turn-controller",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Dependency-free, explicit conversation-turn decisions with cancellation and review",
+  "exports": "./src/turn-controller.mjs"
+}

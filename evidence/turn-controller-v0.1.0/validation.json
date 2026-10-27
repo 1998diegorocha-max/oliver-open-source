@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "component": "OLIVER Turn Controller",
+  "version": "0.1.0",
+  "source_tag": "turn-controller-v0.1.0",
+  "distinct_test_cases": 35,
+  "scope": "Simulated turn events and actual loopback HTTP; no physical speech, model, production deployment or independent audit.",
+  "runtime_dependencies": 0,
+  "model_calls": 0,
+  "external_network_requests": 0,
+  "environments": [
+    {
+      "platform": "Linux",
+      "architecture": "x86_64",
+      "node": "v24.22.1",
+      "recorded_at": "2026-10-27T13:03:40.520025+00:00",
+      "command": "node --test --test-reporter=tap",
+      "exit_code": 0,
+      "summary": {
+        "tests": 35,
+        "pass": 35,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "tap_log": "node24-linux.tap",
+      "tap_sha256": "11dbae4baf827b0e6c0849f46eefe4443f2ea9dd65272d8ec0d2bab9dcc3445e"
+    },
+    {
+      "platform": "Windows",
+      "architecture": "AMD64",
+      "node": "v24.21.0",
+      "recorded_at": "2026-10-27T13:06:10.724533+00:00",
+      "command": "node --test --test-reporter=tap",
+      "exit_code": 0,
+      "summary": {
+        "tests": 35,
+        "pass": 35,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "tap_log": "node24-windows.tap",
+      "tap_sha256": "ae8187b893e9f8c43cb82a9ccb687f040ada05995251aa5765f5435a8a8d01ae"
+    }
+  ],
+  "source_sha256": {
+    "package.json": "080ef803e26ba813a164f71dfab0e31c4c6dfd05ed34718e91e40f31cc5a97f6",
+    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    "packages/turn-controller/package.json": "9e87082f5b27d76d3887dfe62ebd4ef02c42b902ca636960f2286fb520d5bab5",
+    "packages/turn-controller/src/turn-controller.mjs": "82980c45af442a5fdb5408c1e7071fd3ef9bba49fd2bf33a01e0b1dec5c68097",
+    "examples/turn-cli.mjs": "ca0a1897083ba06819b4e169934a65ba27af20f752dcd1c47f5abab9c2ea6cc0",
+    "examples/turn-lab/server.mjs": "8c98c2dda9fa3dbef3db1b76e5aca4de772ac4055071e7ba45d4a016e97b5b1f",
+    "examples/turn-lab/index.html": "a680a22287fd1b2045369d45544ec0ca25d9ff2bd6f9cf415f79f1ea2cb82747",
+    "examples/turn-lab/app.mjs": "13a79197eef432ec339299dcf26ac652bfc17cb0a3a7a7d75b96aeb2cb97d94a",
+    "examples/turn-lab/style.css": "a469b0428ddc1cf8efe84ae403696c24bcd8d8d414512591741c785a73a968ec",
+    "test/turn-controller.test.mjs": "7195f24ff93bae464a3d7d4911dfb88a8956ef51236ad3caedb763fef96e82ce",
+    "test/demo-server.test.mjs": "0da4a59bab8cf7fbc46f4eec1c3b0e904a91edf4d6917597afd06efd6160eb45",
+    "tools/check-evidence.mjs": "eb1570083c81bc24c5fc0517aac9df3085b2fc8438d40ea7ac0275d1d1ffa883"
+  }
+}

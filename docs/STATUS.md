@@ -2,28 +2,32 @@
 
 Updated: 27 October 2026.
 
-This page describes the contents of **1998diegorocha-max/oliver-open-source**, rather than the state of private prototypes or future architecture.
+This page describes the public contents of **1998diegorocha-max/oliver-open-source**. The first software component is OLIVER Turn Controller v0.1.0.
 
 | Item | Public status |
 | --- | --- |
-| Project identity and mission | Published |
+| Project identity, English and Brazilian Portuguese presentation | Published |
 | MIT license | Published; retained without changes |
-| Vision, roadmap and security policy | Published documentation |
-| Contribution and review templates | Published |
-| Reusable implementation module | Planned; not published |
-| Runnable assistant or public Android release | Not included in this repository |
-| Public automated test suite | Planned with the first technical module |
+| Turn-controller source and API contract | Implemented in this repository |
+| Automated software checks | 35 cases; recorded runs and commands in the evidence page |
+| CLI and interactive browser lab | Published simulations; no microphone or AI backend |
+| Proposal and component threat model | Published |
+| Full Android assistant or production service | Not distributed by this repository |
+| Speech recognition, synthesis and human conversation quality | Not validated by this component |
+| Cross-device runtime, context and specialized agents | Design objectives |
 | Independent security audit or certification | Not established |
 | Continuous autonomous software development | Not demonstrated by this repository |
 
 ## Evidence and reach
 
-We do not currently publish verified package-download, downstream-dependency or deployment metrics. Repository activity can be inspected in the [commit history](https://github.com/1998diegorocha-max/oliver-open-source/commits/main/). No adoption or critical-infrastructure claim is made on the basis of project ambition.
+See [technical evidence](TECHNICAL_EVIDENCE.md) for scope, actual environments, raw test logs and source hashes. The same cases run in multiple environments remain 35 distinct cases, not an inflated cumulative total.
 
-Private prototyping and internal experiments may inform the design. They are not public reproducibility evidence and are not distributed through this repository.
+No verified package-download, downstream-dependency or production-deployment metrics are published. The first component is distributed as repository source, not as an npm package or Android APK. Repository activity is visible in the [commit history](https://github.com/1998diegorocha-max/oliver-open-source/commits/main/).
+
+Private prototyping is separate and is not public reproducibility evidence. No private application history, recordings, device configuration or owner data is included in this component.
 
 ## Completion rule
 
-A future feature moves from planned to implemented only after its source and documentation are published. It moves to tested only with a reproducible test and result. A working prototype does not by itself establish production readiness, broad compatibility or security guarantees.
+A future feature becomes implemented only after its source and documentation are published. It becomes tested only with a reproducible test and result. A simulation does not establish real-device behavior, voice naturalness, production readiness or a security guarantee.
 
-See the [roadmap](ROADMAP.md) for the next deliverables and the [security policy](../SECURITY.md) for scope and disclosure guidance.
+See the [roadmap](ROADMAP.md), [vision](VISION.md) and [security policy](../SECURITY.md).

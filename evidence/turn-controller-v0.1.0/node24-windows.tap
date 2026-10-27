@@ -1,0 +1,220 @@
+TAP version 13
+# Subtest: the demo serves its explicit simulation notice and entry module
+ok 1 - the demo serves its explicit simulation notice and entry module
+  ---
+  duration_ms: 42.3667
+  type: 'test'
+  ...
+# Subtest: the demo serves the actual reusable controller as a JavaScript module
+ok 2 - the demo serves the actual reusable controller as a JavaScript module
+  ---
+  duration_ms: 4.212
+  type: 'test'
+  ...
+# Subtest: both browser UI assets are available from the local server
+ok 3 - both browser UI assets are available from the local server
+  ---
+  duration_ms: 6.3252
+  type: 'test'
+  ...
+# Subtest: the HTTP policy blocks external connections, inline scripts, and form submission
+ok 4 - the HTTP policy blocks external connections, inline scripts, and form submission
+  ---
+  duration_ms: 2.5495
+  type: 'test'
+  ...
+# Subtest: HTTP requests cannot retrieve the repository license or parent files through the demo
+ok 5 - HTTP requests cannot retrieve the repository license or parent files through the demo
+  ---
+  duration_ms: 7.6556
+  type: 'test'
+  ...
+# Subtest: the demo rejects mutation methods and has no request-submission API
+ok 6 - the demo rejects mutation methods and has no request-submission API
+  ---
+  duration_ms: 3.5683
+  type: 'test'
+  ...
+# Subtest: HEAD reports an asset type without returning the asset body
+ok 7 - HEAD reports an asset type without returning the asset body
+  ---
+  duration_ms: 5.3429
+  type: 'test'
+  ...
+# Subtest: a final transcript waits for the complete silence window
+ok 8 - a final transcript waits for the complete silence window
+  ---
+  duration_ms: 3.2838
+  type: 'test'
+  ...
+# Subtest: partial recognition cannot auto-submit or be confirmed before review
+ok 9 - partial recognition cannot auto-submit or be confirmed before review
+  ---
+  duration_ms: 0.1724
+  type: 'test'
+  ...
+# Subtest: continued speech invalidates an older final transcript
+ok 10 - continued speech invalidates an older final transcript
+  ---
+  duration_ms: 0.2275
+  type: 'test'
+  ...
+# Subtest: revised final text restarts the silence window
+ok 11 - revised final text restarts the silence window
+  ---
+  duration_ms: 0.1655
+  type: 'test'
+  ...
+# Subtest: repeated ticks and confirmations cannot duplicate a submission
+ok 12 - repeated ticks and confirmations cannot duplicate a submission
+  ---
+  duration_ms: 0.1633
+  type: 'test'
+  ...
+# Subtest: cancellation before the deadline prevents later automatic submission
+ok 13 - cancellation before the deadline prevents later automatic submission
+  ---
+  duration_ms: 0.1277
+  type: 'test'
+  ...
+# Subtest: cancellation after submission emits one cancellation intent
+ok 14 - cancellation after submission emits one cancellation intent
+  ---
+  duration_ms: 0.1459
+  type: 'test'
+  ...
+# Subtest: a replaced turn rejects callbacks bearing the old turn identifier
+ok 15 - a replaced turn rejects callbacks bearing the old turn identifier
+  ---
+  duration_ms: 0.1386
+  type: 'test'
+  ...
+# Subtest: replacing a submitted turn cancels the previous intent
+ok 16 - replacing a submitted turn cancels the previous intent
+  ---
+  duration_ms: 0.1792
+  type: 'test'
+  ...
+# Subtest: pause blocks new starts and callbacks until explicit resume
+ok 17 - pause blocks new starts and callbacks until explicit resume
+  ---
+  duration_ms: 0.2025
+  type: 'test'
+  ...
+# Subtest: pause after submission asks the adapter to stop the active request
+ok 18 - pause after submission asks the adapter to stop the active request
+  ---
+  duration_ms: 0.1698
+  type: 'test'
+  ...
+# Subtest: resume discards automatic eligibility and never replays an old draft
+ok 19 - resume discards automatic eligibility and never replays an old draft
+  ---
+  duration_ms: 0.195
+  type: 'test'
+  ...
+# Subtest: an incomplete transcript falls back to explicit review at the deadline
+ok 20 - an incomplete transcript falls back to explicit review at the deadline
+  ---
+  duration_ms: 0.8791
+  type: 'test'
+  ...
+# Subtest: an overdue tick requires review even for an earlier final transcript
+ok 21 - an overdue tick requires review even for an earlier final transcript
+  ---
+  duration_ms: 0.131
+  type: 'test'
+  ...
+# Subtest: an overdue recognition callback cannot re-arm automatic sending
+ok 22 - an overdue recognition callback cannot re-arm automatic sending
+  ---
+  duration_ms: 0.0741
+  type: 'test'
+  ...
+# Subtest: review-only mode requires an explicit confirmation
+ok 23 - review-only mode requires an explicit confirmation
+  ---
+  duration_ms: 0.0883
+  type: 'test'
+  ...
+# Subtest: empty final results never become requests
+ok 24 - empty final results never become requests
+  ---
+  duration_ms: 0.1033
+  type: 'test'
+  ...
+# Subtest: duplicate and out-of-order sequence numbers cannot overwrite accepted text
+ok 25 - duplicate and out-of-order sequence numbers cannot overwrite accepted text
+  ---
+  duration_ms: 0.089
+  type: 'test'
+  ...
+# Subtest: a backward clock does not shorten the silence window or mutate text
+ok 26 - a backward clock does not shorten the silence window or mutate text
+  ---
+  duration_ms: 0.0975
+  type: 'test'
+  ...
+# Subtest: a stale turn with a far-future timestamp cannot expire the current turn
+ok 27 - a stale turn with a far-future timestamp cannot expire the current turn
+  ---
+  duration_ms: 0.0683
+  type: 'test'
+  ...
+# Subtest: an oversized update fails closed and preserves a bounded review draft
+ok 28 - an oversized update fails closed and preserves a bounded review draft
+  ---
+  duration_ms: 0.0721
+  type: 'test'
+  ...
+# Subtest: malformed recognition requires review instead of retaining automatic eligibility
+ok 29 - malformed recognition requires review instead of retaining automatic eligibility
+  ---
+  duration_ms: 0.0619
+  type: 'test'
+  ...
+# Subtest: submitted text is isolated from late recognition events
+ok 30 - submitted text is isolated from late recognition events
+  ---
+  duration_ms: 0.0581
+  type: 'test'
+  ...
+# Subtest: snapshots and decisions cannot be changed by a consumer
+ok 31 - snapshots and decisions cannot be changed by a consumer
+  ---
+  duration_ms: 0.8985
+  type: 'test'
+  ...
+# Subtest: Brazilian Portuguese accents and emoji survive without normalization loss
+ok 32 - Brazilian Portuguese accents and emoji survive without normalization loss
+  ---
+  duration_ms: 0.0823
+  type: 'test'
+  ...
+# Subtest: invalid configuration is rejected before creating a controller
+ok 33 - invalid configuration is rejected before creating a controller
+  ---
+  duration_ms: 0.2111
+  type: 'test'
+  ...
+# Subtest: invalid clocks and unknown events leave the prior state untouched
+ok 34 - invalid clocks and unknown events leave the prior state untouched
+  ---
+  duration_ms: 0.1882
+  type: 'test'
+  ...
+# Subtest: independent controllers do not share conversation state
+ok 35 - independent controllers do not share conversation state
+  ---
+  duration_ms: 0.0763
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 232.7347

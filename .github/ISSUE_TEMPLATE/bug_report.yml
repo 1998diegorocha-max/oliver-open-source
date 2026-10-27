@@ -1,5 +1,5 @@
-name: Documentation or reproducibility problem
-description: Report an issue with published material.
+name: Component, demo or documentation problem
+description: Report a reproducible issue with the public component or material.
 title: "[Bug] "
 body:
   - type: markdown
@@ -19,3 +19,8 @@ body:
       description: Explain how another contributor can reproduce the problem.
     validations:
       required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and test output
+      description: Include Node version, operating system, public revision and relevant output without private data.

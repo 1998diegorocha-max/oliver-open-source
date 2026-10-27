@@ -11,12 +11,13 @@ The checkboxes below describe this public repository. They do not certify privat
 
 ## First reusable technical release
 
-- [ ] Select one narrowly scoped component through a documented proposal.
-- [ ] Publish its source with dependency and license information.
-- [ ] Provide a small example that runs from a clean checkout.
-- [ ] Add automated checks for normal operation and relevant failure cases.
-- [ ] Document resource use, supported environments and known limitations.
-- [ ] Tag a public release and publish reproduction instructions.
+- [x] Select the turn controller through [Proposal 001](proposals/001-turn-controller.md).
+- [x] Publish its source with dependency and license information.
+- [x] Provide CLI and interactive examples that run from a clean checkout.
+- [x] Add 35 automated cases for normal operation and relevant failure boundaries.
+- [x] Document supported test environments, dependency count and limitations.
+- [ ] Benchmark resource use and real speech timing.
+- [x] Publish reproduction instructions and a component-specific source tag, `turn-controller-v0.1.0`.
 
 **Acceptance:** another contributor can follow the instructions, run the example and reproduce the checks without private files, hidden credentials or access to the private product repository.
 
@@ -31,7 +32,7 @@ The checkboxes below describe this public repository. They do not certify privat
 
 ## Security and agent evaluation
 
-- [ ] Publish a threat model for the selected component.
+- [x] Publish a [threat model](THREAT_MODEL.md) for the selected component.
 - [ ] Test permission boundaries and malicious or ambiguous instructions.
 - [ ] Demonstrate revocation and incident recovery in an isolated environment.
 - [ ] Obtain external review before making broader security claims.

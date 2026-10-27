@@ -1,0 +1,14 @@
+{
+  "name": "dragon-oliver-open-source",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public conversation-control components for the DRAGON / OLIVER initiative",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node examples/turn-lab/server.mjs",
+    "verify:evidence": "node tools/check-evidence.mjs"
+  }
+}

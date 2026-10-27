@@ -15,7 +15,7 @@ The practical starting point is Brazilian Portuguese and accessible hardware. Th
 | User-controlled context | Store selected information with retention and deletion choices | Private data is not automatically shared across every agent |
 | Operational evidence | Record meaningful outcomes and support recovery | Logs minimize sensitive content and distinguish attempts from success |
 
-These are design responsibilities. This repository does not yet implement the architecture.
+These are design responsibilities. The repository now implements one narrow conversation-turn component; the broader architecture remains planned. See the [public status](STATUS.md) and [component proposal](proposals/001-turn-controller.md).
 
 ## Future security research
 

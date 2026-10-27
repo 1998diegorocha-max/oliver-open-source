@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive, local simulation of DRAGON / OLIVER conversation-turn decisions.">
+  <title>OLIVER Turn Lab · DRAGON</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <main>
+    <header class="brand"><span class="mark" aria-hidden="true">D</span><span>DRAGON <span class="muted">/ OLIVER</span></span><span class="version">Turn controller · v0.1.0</span></header>
+    <section class="intro">
+      <p class="eyebrow">PUBLIC COMPONENT · INTERACTIVE LAB</p>
+      <h1>A conversation should<br>wait for <em>your turn.</em></h1>
+      <p class="lead">Explore when a transcript can be submitted, when it needs review, and how a pause or cancellation changes the decision.</p>
+      <p class="notice"><strong>This is a simulation.</strong> You supply transcript events and advance a simulated clock. No microphone, speech synthesis, AI model, or external service is used.</p>
+    </section>
+    <div class="grid">
+      <section class="panel" aria-labelledby="controls-heading">
+        <div class="panel-title"><h2 id="controls-heading">1. Supply an event</h2><span class="tag">Local only</span></div>
+        <label for="mode">Submission policy</label>
+        <select id="mode"><option value="auto">Final transcript + 1.5 seconds of silence</option><option value="review">Always require explicit review</option></select>
+        <label for="transcript">Transcript · try Brazilian Portuguese</label>
+        <textarea id="transcript" rows="3" maxlength="4000">Olá, OLIVER. Vamos organizar meu próximo projeto?</textarea>
+        <p class="hint">Editing this box alone does not send an event. The buttons below simulate a recognizer.</p>
+        <div class="buttons">
+          <button data-event="start" class="primary">Start a new turn</button>
+          <button data-event="partial">Receive partial</button>
+          <button data-event="final">Receive final</button>
+          <button data-event="tick">Advance 500 ms</button>
+          <button data-event="confirm">Confirm reviewed text</button>
+          <button data-event="cancel">Cancel turn</button>
+          <button data-event="pause">Pause</button>
+          <button data-event="resume">Resume</button>
+        </div>
+        <div class="scenario">
+          <label for="scenario">Or inspect a reproducible scenario</label>
+          <select id="scenario">
+            <option value="normal">Final transcript → silence → one submit intent</option>
+            <option value="partial">Partial speech → wait → no submission</option>
+            <option value="cancel">Cancel before silence → no submission</option>
+            <option value="stale">New turn → reject callback from the old turn</option>
+            <option value="review">Deadline → review → explicit confirmation</option>
+          </select>
+          <button id="run-scenario">Run scenario from a clean state</button>
+          <p class="hint">Scenarios reset the policy to automatic and use the text above.</p>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="decision-heading">
+        <div class="panel-title"><h2 id="decision-heading">2. Inspect the decision</h2><span id="phase" class="tag" aria-live="polite">idle</span></div>
+        <div class="metrics">
+          <div><strong id="clock">0 ms</strong><span>Simulated clock</span></div>
+          <div><strong id="submits">0</strong><span>Submit intents</span></div>
+          <div><strong id="cancels">0</strong><span>Cancel intents</span></div>
+        </div>
+        <p id="reason" role="status">Ready. Start a turn or run a scenario.</p>
+        <label for="snapshot">Current bounded state</label>
+        <pre id="snapshot" tabindex="0"></pre>
+        <h3>Event trail <span class="muted">· latest 24</span></h3>
+        <ol id="events" aria-label="Simulation event trail"></ol>
+      </section>
+    </div>
+    <footer>Decisions are data. A host adapter must execute submit intents, honor cancellation, and enforce its own authentication and permissions. This lab does not run the OLIVER Android app.</footer>
+  </main>
+</body>
+</html>

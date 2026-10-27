@@ -2,7 +2,7 @@
 
 ## Current scope
 
-This repository currently contains documentation and contribution templates, not a runnable assistant or a supported production service. No independent audit, invulnerability guarantee or production security certification is claimed.
+This repository contains the OLIVER Turn Controller source component, automated tests, a local demonstration, documentation and contribution templates. It is not a complete assistant or a supported production service. See the [component threat model](docs/THREAT_MODEL.md). No independent audit, invulnerability guarantee or production security certification is claimed.
 
 Security objectives in the [vision](docs/VISION.md) are planned work. Encryption alone would not protect a system from unsafe permissions, compromised endpoints, stolen credentials or software defects.
 
