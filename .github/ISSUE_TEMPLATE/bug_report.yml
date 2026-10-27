@@ -1,0 +1,21 @@
+name: Documentation or reproducibility problem
+description: Report an issue with published material.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets or vulnerability details. See SECURITY.md for sensitive concerns."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Include the public file, link or revision involved.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected result
+      description: Explain how another contributor can reproduce the problem.
+    validations:
+      required: true

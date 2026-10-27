@@ -1,0 +1,23 @@
+name: Component or improvement proposal
+description: Propose a bounded public contribution.
+title: "[Proposal] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Problem and intended users
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Smallest useful contribution
+      description: Explain scope, resource needs and any dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: How could someone verify the result?
+    validations:
+      required: true

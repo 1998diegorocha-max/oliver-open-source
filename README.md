@@ -1,82 +1,47 @@
-OLIVER by DRAGON
+# DRAGON · OLIVER Open Source
 
-Building the Future of Personal AI
+**Personal intelligence across your devices. Under your control.**
 
-A Brazilian initiative exploring intelligent, private, accessible and autonomous AI assistants.
+[Português brasileiro](README.pt-BR.md) · [Project status](docs/STATUS.md) · [Vision](docs/VISION.md) · [Roadmap](docs/ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-OLIVER is the public-facing AI assistant envisioned by DRAGON, with JARVIS as the project's internal development identity.
+DRAGON is a Brazilian initiative developing a vision for personal AI that connects conversation, user-controlled memory and useful automation across devices. OLIVER is its user-facing assistant. JARVIS is the project's historical internal development name.
 
-Our mission is to make personal AI more useful, adaptable and accessible, beginning with Brazilian Portuguese and expanding toward connected devices and practical automation.
+Our starting point is Brazilian Portuguese, accessible hardware and practical assistance in everyday workflows. Our longer-term ambition is a coordinated experience across phones, computers, wearables and other environments explicitly enrolled by their owners.
 
----
+> **Public stage: documentation and design.** This repository currently publishes the project foundation, MIT license, roadmap and contribution guidance. It does not yet contain a runnable assistant, reusable software modules or a public product release. Related private prototyping is separate and is not reproducible from this repository.
 
-Our Vision
+## What we are working toward
 
-We envision an AI assistant capable of helping people interact naturally with technology while respecting privacy, user control and security.
+| Direction | Intended value |
+| --- | --- |
+| Natural conversation | Useful voice and text experiences in Brazilian Portuguese |
+| User-controlled context | Explicit choices about what is remembered, shared or deleted |
+| Accessible local AI | Evaluate components against real hardware, language support and operating cost |
+| Cross-device continuity | Carry authorized tasks between enrolled devices |
+| Supervised agents | Narrow permissions, reviewable actions and understandable execution records |
+| Reusable public components | Small releases with examples, tests and clear limits |
 
-Our research and development priorities include:
+The roadmap describes goals, not completed capabilities. Voice quality, autonomous development, broad device integration and production security remain engineering and validation work.
 
-- Conversational AI: Natural voice and text interaction.
-- Persistent Memory: Context-aware experiences with user-controlled data.
-- Local AI: Open-source models and efficient on-device inference.
-- Android Integration: A foundation for mobile AI assistance.
-- Safe Automation: Supervised AI agents with auditable actions.
-- Multi-Device Future: Research toward desktop, connected environments and additional platforms.
-- Continuous Improvement: Testing, evaluation and versioned engineering workflows.
+## Security as an engineering discipline
 
-Open-Source Initiative
+We aim to build layered protection: authenticated devices, protected keys, scoped access, isolated tools and auditable decisions. Cryptography is one control within that design. We make no claim that the project is unhackable or independently certified.
 
-Our goal is to contribute reusable, carefully reviewed components to the developer community.
+The proposed incident workflow is detection, defensive containment, owner notification and evidence preservation. Reports intended for external recipients would require human review. See the [security policy and threat boundaries](SECURITY.md).
 
-This public repository is separate from the private DRAGON product development repository.
+## Explore and contribute
 
-Current status: Early-stage public development.
+- [Vision and proposed architecture](docs/VISION.md)
+- [Delivery roadmap and acceptance criteria](docs/ROADMAP.md)
+- [What is public and what remains planned](docs/STATUS.md)
+- [How to propose a useful contribution](CONTRIBUTING.md)
 
-The initial documentation and license are available. Functional modules, examples and tests will be published progressively after technical and security review.
+Our next technical milestone is a first reusable module with a reproducible example and automated tests. No package installation or runtime setup is currently required to read this repository.
 
-The features described in our vision are development goals, not claims of completed production functionality.
+## People and licensing
 
-Roadmap
+Diego Rocha de Oliveira — founder and project lead. Vinícius Messias — technical collaborator.
 
-- [x] Establish the OLIVER open-source repository.
-- [x] Define the public project identity.
-- [x] Publish an initial open-source license.
-- [ ] Release the first reusable technical module.
-- [ ] Publish automated tests and usage examples.
-- [ ] Expand security and contribution documentation.
-- [ ] Improve Brazilian Portuguese accessibility.
-- [ ] Develop community participation and public releases.
+Public material in this repository is provided under the [MIT License](LICENSE). Private DRAGON/JARVIS product code, third-party models and external services are not included by that license. Their availability, licenses, quotas and costs must be evaluated separately.
 
-Development Philosophy
-
-Built with AI. Guided by humans. Improved through testing.
-
-We use ChatGPT-assisted development for research, software engineering, documentation and problem-solving, combined with human review and verification.
-
-We believe artificial intelligence can help small teams build ambitious technology.
-
-The Team
-
-Diego Rocha de Oliveira — Founder and Project Lead
-
-Vinícius Messias — Technical Collaborator
-
-DRAGON — Project and business identity
-
-Contributing
-
-Community contributions, ideas, testing recommendations and technical discussions are welcome.
-
-Please avoid sharing private credentials, personal information or sensitive vulnerability details in public issues.
-
-Licensing
-
-Publicly released code in this repository is available under the MIT License unless otherwise specified.
-
-Private DRAGON/JARVIS software and brand rights are not included.
-
-Independent project. Not affiliated with or endorsed by OpenAI.
-
----
-
-DRAGON | From Brazil to the Future of Personal AI.
+This is an independent project. No affiliation, endorsement or security certification from an AI provider is claimed.
